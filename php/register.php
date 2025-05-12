@@ -12,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     //  B02: Foutieve verwerking gezinslid (veld wordt niet opgeslagen, of zelfs crasht bij fout type)
     $gezinslid = $_POST["gezinslid"] ?? null;  // niet gevalideerd
 
+    // Tim - The ! is wrong. Currently it checks if both are diffrent when they should be the same.
     if ($wachtwoord !== $bevestig) {
         die("Wachtwoorden komen niet overeen.");
     }

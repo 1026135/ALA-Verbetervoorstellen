@@ -4,7 +4,7 @@
 $host = 'localhost';
 $db   = 'beembrug';
 $user = 'root';
-$pass = 'root';
+$pass = '';
 $charset = 'utf8mb4';
 
 // Bug B07/B09: Geen SMTP-config, mislukte mailfunctionaliteit
